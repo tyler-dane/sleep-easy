@@ -22,3 +22,6 @@ What now? The best option might be to recover from a physical backup that is sto
 - Google GSuite (GDrive, Gmail)
 - Microsoft OneDrive (OneNote)
 - Dropbox
+- Facebook
+- Twitter
+- Instagram

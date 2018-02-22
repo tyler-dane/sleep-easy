@@ -34,7 +34,7 @@ The best option might be to recover from a physical backup that is stored locall
 
 ## Roadmap
 #### Implement primary features
-- [ ] Compressed backups for each API
+- [ ] Compressed backups for each API [In progress]
 - [ ] Interactive CLI
 #### Implement secondary features
 - [ ] Incremental backups
@@ -44,3 +44,6 @@ The best option might be to recover from a physical backup that is stored locall
 - [ ] GUI
 - [ ] User configuration
 #### Implement into an Android App
+
+
+Interested in helping? Pull requests, issues, and forks are welcome!

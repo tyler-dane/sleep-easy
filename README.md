@@ -40,10 +40,10 @@ The best option might be to recover from a physical backup that is stored locall
 - [ ] Incremental backups
 - [ ] Automate backups
 - [ ] Summary and alert emails
-#### Implement tertiary featuers
+#### Implement tertiary features
 - [ ] GUI
 - [ ] User configuration
-#### Implement into an Android App
+#### Leverage existing codebase to create an Android App
 
 
 Interested in helping? Pull requests, issues, and forks are welcome!

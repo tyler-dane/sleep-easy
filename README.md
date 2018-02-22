@@ -7,7 +7,9 @@ Imagine the following scenarios:
 - You permanently delete an email, certain that you'll never need it again. A few days later, you realize that you do, in fact, need the email.
 - You need to access a document saved in the cloud, but your cloud provider's website is down and you have no local copy of the document.
 
-What now? The best option might be to recover from a physical backup that is stored locally or on a separte cloud account. Unfortunately, many cloud providers do not natively support this sort of backup, and creating them manually can be time-consuming and tedious. This program intends to solve this problem by automating backups for many popular cloud services, allowing users to sleep easy again.
+What now? 
+
+The best option might be to recover from a physical backup that is stored locally or on a separte cloud account. Unfortunately, many cloud providers do not natively support this sort of backup, and creating them manually can be time-consuming and tedious. This program intends to solve this problem by automating backups for many popular cloud services, allowing users to sleep easy again.
 
 ----
 

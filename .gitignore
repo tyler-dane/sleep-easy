@@ -6,3 +6,4 @@ gradle/*
 out/*
 gradlew
 gradle.bat
+build/*

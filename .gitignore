@@ -1,2 +1,8 @@
 */client_secret.json
 .idea/*
+.idea*
+build/*
+gradle/*
+out/*
+gradlew
+gradle.bat

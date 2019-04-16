@@ -1,0 +1,69 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'com.sleep.download.Main'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // ###########################
+    // ##### Google ##############
+    // ###########################
+    compile group: 'com.google.http-client', name: 'google-http-client-jackson2', version: '1.23.0'
+    compile 'com.google.api-client:google-api-client:1.23.0'
+    compile 'com.google.oauth-client:google-oauth-client-jetty:1.23.0'
+    compile 'com.google.apis:google-api-services-drive:v3-rev110-1.23.0'
+    compile 'com.google.code.gson:gson:2.8.5'//todo get this working
+
+    // ###########################
+    // ##### Remote Storage ######
+    // ###########################
+    compile 'com.dropbox.core:dropbox-core-sdk:3.0.8'
+
+    // ###########################
+    // ##### Logging #############
+    // ###########################
+
+    // Using sfl4j allows us to replace different loggers later, if desired
+    compile group: 'org.slf4j', name:'slf4j-api', version: '1.7.2'
+
+    // sfl4j is just a facade for loggers. To actually get logging to work, you need to
+    // tie it in with some actual implementation, e.g., logback
+    compile group: 'ch.qos.logback', name:'logback-classic', version: '1.0.9'
+    compile group: 'ch.qos.logback', name:'logback-core', version: '1.0.9'
+
+    // ###########################
+    // ##### Testing  ############
+    // ###########################
+    testCompile 'junit:junit:4.12'
+
+    // ###########################
+    // ##### oAuth ###############
+    // ###########################
+    compile group: 'javax.servlet', name: 'javax.servlet-api', version: '3.0.1'
+    compile group: 'com.github.scribejava', name: 'scribejava-apis', version: '5.5.0'
+
+    // ###########################
+    // ##### Misc ################
+    // ###########################
+    compile group: 'commons-io', name: 'commons-io', version: '2.4'
+    compile group: 'commons-collections', name: 'commons-collections', version: '3.2'
+    //compile 'org.apache.commons:commons-configuration2:2.3'
+    compile group: 'commons-configuration', name: 'commons-configuration', version: '1.10'
+
+    //TODO remove this commons one if you eliminate the PropertiesHOlder stuff
+}
+
+jar {
+    manifest {
+        attributes(
+                'Class-Path': configurations.compile.join(' '),
+                'Main-Class': 'com.sleep.download.Main'
+        )
+    }
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+
+    <key>Label</key>
+    <string>com.sleep.plist</string>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>StartInterval</key>
+    <integer>43200</integer>
+
+    <key>StartCalendarInterval</key>
+    <dict>
+    	<key>Hour</key>
+    	<integer>4</integer>
+    	<key>Minute</key>
+    	<integer>0</integer>
+    </dict>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/ty/sleep-easy-backups/logs/stderr.log</string>
+
+    <key>StandardOutPath</key>
+    <string>/Users/ty/sleep-easy-backups/logs/stdout.log</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+      <key>PATH</key>
+      <string><![CDATA[/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/tmp]]></string>
+    </dict>
+
+    <key>WorkingDirectory</key>
+    <string>/tmp/</string>
+
+    <key>ProgramArguments</key>
+    <array>
+	    <string>/usr/bin/java</string>
+	    <string>-jar</string>
+	    <string>/Users/ty/src/gitlab/drive-api-testing/app/build/libs/app-1.0.jar</string>
+    </array>
+
+  </dict>
+</plist>
